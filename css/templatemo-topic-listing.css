@@ -485,7 +485,7 @@ strong {
   HERO        
 -----------------------------------------*/
 .hero-section {
-  background-image: url(bgcolor.jpg);
+  background-image: url(../bgcolor.jpg);
   position: relative;
   overflow: hidden;
   padding-top: 150px;
