@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple Reistration Form</title>
+  <style>
+    body {
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+	background-color:#f7f7f7;
+    background-image: url(./bgcolor.jpg);
+    background-color: rgba(255, 255, 255, 0.5);
+}
+* {box-sizing: border-box}
+
+/* Add padding to container elements */
+.container {
+    padding: 20px;
+      width:550px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+      border:3px solid #080000;
+      border-radius:10px;
+      background:white;
+      font-size: large;
+  }
+input{
+  border: 2px solid black;
+  border-radius: 15px;
+}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+
+  background: #f7f7f7;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+select {
+  width: 18%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+
+  background: #f7f7f7;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+input[type=phone] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+
+  background: #f7f7f7;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=phone]:focus, select:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+
+/* Set a style for all buttons */
+button {
+  background-color: #000608;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+	font-size:16px;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	border-radius:10px;
+}
+
+button:hover {
+  opacity:1;
+}
+
+
+/* Change styles for signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .signupbtn {
+     width: 100%;
+  }
+}
+  </style>
+</head>
+<body>
+    <form>
+        <div class="container">
+          <h1>Change Password!</h1>
+          <br>
+      
+              <label for="email"><b>Email</b></label>
+            <input type="text" name="Email" placeholder="Enter Email" required>
+           
+          <label for="psw"><b>New Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+          <label for="psw"><b>Re-Type New Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+
+      
+          <div class="clearfix">
+      
+            <button onclick="window.location.href='login.html'" type="submit" class="btn">Change Password</button>
+            
+          </div>
+        </div>
+      </form>
+</body>
+</html>
