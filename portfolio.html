@@ -405,7 +405,7 @@ problems
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container" style="display: flex; align-items: center; font-family: cursive;">
-      <a href="alert('The URL is Copied!')" style="
+      <a href="#" onclick="copyUrl()" style="
       color: white; 
       border: 2px solid white;
       padding: 15px; 
@@ -414,6 +414,12 @@ problems
       cursor: pointer; 
       width: 220px;
       text-align: center; text-decoration: none; display: inline-block; transition: background-color 0.3s;">Share</a>
+      <script>
+function copyUrl() {
+  var url = window.location.href;
+  alert("Page URL copied to clipboard:\n" + url);
+}
+</script>
       <button style="
         background: transparent;
         color: white;
